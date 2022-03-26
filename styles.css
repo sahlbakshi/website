@@ -60,13 +60,13 @@ body {
 
 
 .temp {
-    padding: 265px;
+    padding: 265px 265px 265px 265px;
     border-bottom: 1px solid black;
     background-color: rgb(244, 242, 240);
 }
 
 .tempFooter {
-    padding: 225px;
+    padding: 225px 225px 225px 265px;
 } 
 
 .title {
