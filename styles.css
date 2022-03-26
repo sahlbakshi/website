@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.rotateLeft {
+    margin-top: 36vh;
+    transform: rotate(-90deg);
+    font-size: 13px;
+}
+
+.rotateRight {
+    margin-top: 44vh;
+    transform: rotate(+90deg);
+    font-size: 13px;
+}
+
+/* letter spacing in parapgraphs only used*/
+
+/* see footer part later */
+
+/* fox for phone too */
+
+.container {
+    display: flex;
+}
+
+.left, .right {
+    position: fixed;
+    display: block;
+    width: 90px;
+    height: 100vh;
+}
+
+.left {
+    left: 0;
+    border-right: 1px solid #000;
+}
+
+.right {
+    right: 0;
+    border-left: 1px solid #000;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 70px;
+    padding-bottom: 100px;
+    /* see exact padding later */
+    border-bottom: 1px solid black;
+    background-color: #ffffff;
+}
+
+
+.temp {
+    padding: 265px;
+    border-bottom: 1px solid black;
+    background-color: rgb(244, 242, 240);
+}
+
+.tempFooter {
+    padding: 225px;
+} 
+
+.title {
+    /* see exact padding later */
+    margin-top: 2px;
+    padding: 10px;
+    width: 18vh;
+    font-weight: 400;
+    font-size: 17px;
+   
+}
+
+.info {
+    padding: 10px;
+    width: 90vh;
+    line-height: 31px;
+    letter-spacing: .5px;
+    font-size: 15px;
+}
