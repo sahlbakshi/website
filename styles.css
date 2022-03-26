@@ -136,3 +136,13 @@ body {
     gap: 8px;
     align-items: center;
 }
+
+.size {
+    font-size: 22px;
+}
+
+.third {
+    display: flex;
+    gap: 6px;
+    align-items: center;   
+}
