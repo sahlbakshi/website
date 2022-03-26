@@ -2,42 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Sahl Bakshi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/circle-fill.png">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="left">
-        <p class="rotateLeft">Sahl</p>
+        <p class="rotateLeft">
+            <a class="link" href="mailto:saa2baks@uwaterloo.ca">CONTACT</a>
+        </p>
     </div>
     <div class="right">
-        <p class="rotateRight">Back Up <- </p>
+        <div class="rotateRight">
+            <p class="upArrow" onclick=topOfPage()> <- </p>
+            <p>&nbsp &nbsp &nbsp</p>
+            <p class="downArrow" onclick=bottomOfPage()> -> </p>
+        </div>
     </div>
 
-    <div class="temp">
-        <p>
-            WELCOME TO MY SITE
-        </p>
-        <p>
-            PLEASE SCROLL DOWN ↓ 
-        </p>
+    <div class="header">
+        <p>WELCOME TO MY SITE</p>
+        <p>START SCROLLING DOWN ↓</p>
     </div>
     
-    <div class="content">
+    <div class="content first">
         <div class="title">
-            <p>About</p>
+            <p>ABOUT</p>
         </div>
         <div class="info">
-            <p>Hello. I am Sahl Bakshi and what I do is not set in stone. But I am currently pursuing an undergraduate degree in computer science at the University of Waterloo learning how to build great software products. (ONE MORE LINE AND MAKE ENGLISH BETTER)</p>
+            <p>Hello. I'm Sahl Bakshi and I'm a second year computer science undergraduate student at the University<br> of Waterloo, learning how to build useful software and products. ONE OR TWO MORE LINES ATLEAST</p>
         </div>
     </div>
     <div class="content">
         <div class="title">
-            <p>Skills</p>
+            <p>SKILLS</p>
         </div>
         <div class="info">
             <p>I have picked up quite a few skills during the past few years. Here are some of them.</p>
             <p>
-                Programming Languages <br>
+                Languages<br>
                 Python, C/C++, Javascript, HMTL, CSS/Sass <br>
             </p>
             <p>
@@ -46,18 +50,79 @@
             </p>
             <p>
                 Services & Tools <br>
-                Bash, Git, Github, Slack, Postman, Chrome DevTools, EJS, Heroku <br>
+                Bash, Git, Github, Slack, Postman, Chrome DevTools, EJS, Heroku, UML<br>
             </p>
         </div>
     </div>
-    <div class="temp tempFooter">
-        <p> END OF SITE</p>
-        <p>THANKS FOR STOPPING BY</p>
-        
+    <div class="content">
+        <div class="title">
+            <p>PROJECTS</p>
+        </div>
+        <div class="info">
+            <p>
+                Runtime<br>
+                An application to search and find runtimes for movies and tv shows powered by the TMDB API.<br>
+                <i>Used React, API, SASS</i> 
+            </p>
+            <p>
+                Straights<br>
+                The game of straights, live and in C++; did it for a course, got a near perfect mark.<br>
+                <i>Used C++, UML, Design Patterns</i>
+            </p>
+            <p>
+                Portfolio<br>
+                Personal website with mobile support. Inspiration from <a class="link" href="https://www.pronoy.ca">pronoy.ca</a> and <a class="link" href="http://dmcg.co">dmcg.co</a> and coded by me.<br>
+                <i>Used HTML/CSS, GitHub pages, JS</i>
+            </p>
+            <p>
+                Backend Project<br>
+                Coming Soon
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">
+            <p>EXPERIENCE</p>
+        </div>
+        <div class="info">
+            <p>So far I have complete two interships and am currently searching for Fall '22 internhsips.</p>
+            <p>
+                Project Team Member @ WE Accelerate<br>
+                <i>May 2021 - Aug 2021</i>
+            </p>
+            <p>
+                Software Engineer Intern @ UXBERT<br>
+                <i>January 2022 - April 2022</i>
+            </p>
+        </div>
+    </div>
+    <div class="content last">
+        <div class="title">
+            <p>LEARNING</p>
+        </div>
+        <div class="info">
+            <p>Here are some things I am learning / plan to learn.</p>
+            <p>
+                Go and Golang<br>
+                Because I have only heard good things about it.
+            </p>
+            <p>
+                Payment Methods API<br>
+                Because I want to know how to make apps that involve monetary payments.
+            </p>
+            <p>
+                Embedded Systems<br>
+                Beacuse I want to write software for tangible products.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>THANKS FOR STOPPING BY.</p>
         <br>
-        <p><a href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
-        <p><a href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
-        <p><a href="https://github.com/sahlbakshi">GitHub</a></p>
+        <p><a class="link" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
+        <p><a class="link" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
+        <p><a class="link" href="https://github.com/sahlbakshi">GitHub</a></p>
     </div>
     </div>
 </body>
