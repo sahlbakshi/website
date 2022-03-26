@@ -15,7 +15,7 @@ body {
 
 .rotateRight {
     display: flex;
-    margin-top: 45vh;
+    margin-top: 42vh;
     transform: rotate(+90deg);
     font-size: 13px;
 }
@@ -45,7 +45,9 @@ body {
 
 .header,
 .footer {
+    font-size: 16px;
     padding: 320px 320px 320px 320px;
+    padding-left: 450px;
     background-color: rgb(244, 242, 240);
 }
 
@@ -69,33 +71,55 @@ body {
 .title {
     text-align: right;
     margin-right: 100px;
-    margin-top: 4px;
-    width: 18vh;
+    margin-top: 5px;
+    width: 13vh;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
    
 }
 
 .info {
-    width: 88vh;
+    width: 82vh;
     line-height: 31px;
     letter-spacing: .5px;
-    font-size: 15px;
-}
-
-.link {
-    text-decoration: none;
-    color: black;
-}
-
-.link:hover {
-    text-decoration: underline;
-    color: #0000EE;
+    font-size: 16px;
 }
 
 .upArrow:hover,
 .downArrow:hover {
     cursor: pointer;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: #0000EE;
+    color: #0000EE;
+    text-decoration-thickness: 2px;
+}
+
+.reach {
+    margin-top: -15px;
+    text-decoration: underline
+}
+
+.contact {
+    text-decoration: none;
+    color: black;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+}
+
+.start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .first {
@@ -106,9 +130,9 @@ body {
     padding-bottom: 180px;
 }
 
-@media only screen and (max-width: 980px) {
-    .left,
-    .right {
-        display: none;
-    }
+.second {
+    margin-top: -15px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }

@@ -14,3 +14,13 @@ const bottomOfPage = () => {
         behavior: 'smooth'
     });
 } 
+
+const start = document.getElementsByClassName("start")
+const header = document.getElementsByClassName("header")
+
+const startPage = () => {
+    window.scrollTo({
+        top: header[0].scrollHeight,
+        behavior: 'smooth'
+    });
+}

@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <title>Sahl Bakshi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="/circle-fill.png">
+    <link rel="shortcut icon" href="/images/ellipse.png">
     <script src="main.js" defer></script>
 </head>
 <body>
     <div class="left">
         <p class="rotateLeft">
-            <a class="link" href="mailto:saa2baks@uwaterloo.ca">CONTACT</a>
         </p>
     </div>
     <div class="right">
         <div class="rotateRight">
-            <p class="upArrow" onclick=topOfPage()> <- </p>
-            <p>&nbsp &nbsp &nbsp</p>
-            <p class="downArrow" onclick=bottomOfPage()> -> </p>
+            <p class="upArrow" onclick=topOfPage()> <img src="images/left-arrow.png"></p>
+            <p>&nbsp &nbsp &nbsp &nbsp</p>
+            <p class="downArrow" onclick=bottomOfPage()> <img src="images/right-arrow.png"></p>
         </div>
     </div>
 
     <div class="header">
-        <p>WELCOME TO MY SITE</p>
-        <p>START SCROLLING DOWN ↓</p>
+        <p class="start" onclick=startPage()>START HERE ↓</p>
+        <div class="second">
+            <img src="images/ellipse.png">
+            <p class="start" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS</p>
+        </div>
     </div>
     
     <div class="content first">
@@ -31,7 +33,13 @@
             <p>ABOUT</p>
         </div>
         <div class="info">
-            <p>Hello. I'm Sahl Bakshi and I'm a second year computer science undergraduate student at the University<br> of Waterloo, learning how to build useful software and products. ONE OR TWO MORE LINES ATLEAST</p>
+            <p>
+                Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="link" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solves a problem or just for fun.
+            </p>
+            <p>
+                Got something you'd like to ask? An opportunity or project idea? Maybe want to say "Hi!"?<br>
+                <p class="start reach" onclick=bottomOfPage()>Reach out</p>
+            </p>
         </div>
     </div>
     <div class="content">
@@ -39,7 +47,7 @@
             <p>SKILLS</p>
         </div>
         <div class="info">
-            <p>I have picked up quite a few skills during the past few years. Here are some of them.</p>
+            <p>I've picked up quite a few skills over the past few years. Here are some of them.</p>
             <p>
                 Languages<br>
                 Python, C/C++, Javascript, HMTL, CSS/Sass <br>
@@ -60,18 +68,18 @@
         </div>
         <div class="info">
             <p>
-                Runtime<br>
+                <a class="link" href="https://github.com/sahlbakshi/runtime">Runtime</a><br>
                 An application to search and find runtimes for movies and tv shows powered by the TMDB API.<br>
                 <i>Used React, API, SASS</i> 
             </p>
             <p>
-                Straights<br>
+                <a class="link" href="https://github.com/sahlbakshi/straights">Straights</a><br>
                 The game of straights, live and in C++; did it for a course, got a near perfect mark.<br>
                 <i>Used C++, UML, Design Patterns</i>
             </p>
             <p>
-                Portfolio<br>
-                Personal website with mobile support. Inspiration from <a class="link" href="https://www.pronoy.ca">pronoy.ca</a> and <a class="link" href="http://dmcg.co">dmcg.co</a> and coded by me.<br>
+                <a class="link" href="https://github.com/sahlbakshi/website">Portfolio</a><br>
+                Personal website with emphasis on UX. Inspired from <a class="link" href="https://www.pronoy.ca">pronoy.ca</a> and <a class="link" href="http://dmcg.co">dmcg.co</a> and made by me.<br>
                 <i>Used HTML/CSS, GitHub pages, JS</i>
             </p>
             <p>
@@ -85,7 +93,7 @@
             <p>EXPERIENCE</p>
         </div>
         <div class="info">
-            <p>So far I have complete two interships and am currently searching for Fall '22 internhsips.</p>
+            <p>So far I've complete two interships and am searching for Fall '22 internhsips.</p>
             <p>
                 Project Team Member @ WE Accelerate<br>
                 <i>May 2021 - Aug 2021</i>
@@ -104,26 +112,28 @@
             <p>Here are some things I am learning / plan to learn.</p>
             <p>
                 Go and Golang<br>
-                Because I have only heard good things about it.
+                Because I want to add it to my arsenal of skills.
             </p>
             <p>
                 Payment Methods API<br>
-                Because I want to know how to make apps that involve monetary payments.
+                Because I want to make applications that involve monetary payments.
             </p>
             <p>
                 Embedded Systems<br>
-                Beacuse I want to write software for tangible products.
+                Beacuse I want to learn to write software for hardware too.
             </p>
         </div>
     </div>
 
     <div class="footer">
-        <p>THANKS FOR STOPPING BY.</p>
+        <p>THANKS FOR STOPPING BY &nbsp 👋</p>
         <br>
-        <p><a class="link" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
-        <p><a class="link" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
-        <p><a class="link" href="https://github.com/sahlbakshi">GitHub</a></p>
-    </div>
+        <div>
+            <p><a class="link" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
+            <p><a class="link" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
+            <p><a class="link" href="https://github.com/sahlbakshi">GitHub</a></p>
+            <p><a class="link" href="https://www.instagram.com/sahlbakshi/">Instagram</a></p>
+        </div>
     </div>
 </body>
 </html>
