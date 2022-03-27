@@ -8,7 +8,6 @@ body {
 }
 
 .rotateLeft {
-    margin-top: 42vh;
     transform: rotate(-90deg);
     font-size: 13px;
 }
@@ -16,6 +15,7 @@ body {
 .rotateRight {
     display: flex;
     margin-top: 42vh;
+    align-items: center;
     transform: rotate(+90deg);
     font-size: 13px;
 }
@@ -42,20 +42,26 @@ body {
     border-left: 1px solid #000;
 }
 
+/* 
+could have just used 
+box-sizing: border-box;
+and specified height, width and margin 
+*/
 
 .header,
 .footer {
     font-size: 16px;
-    padding: 320px 320px 320px 320px;
     padding-left: 450px;
     background-color: rgb(244, 242, 240);
 }
 
 .header {
+    padding: 320px 320px 320px 320px;
     border-bottom: 1px solid black;
 }
 
 .footer {
+    padding: 230px 220px 230px 320px;
     border-top: 1px solid black;
 }
 
@@ -87,6 +93,8 @@ body {
 
 .upArrow:hover,
 .downArrow:hover {
+    width: 16px;
+    height: 16px;
     cursor: pointer;
 }
 
@@ -98,11 +106,10 @@ body {
     text-decoration: underline;
     text-decoration-color: #0000EE;
     color: #0000EE;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 }
 
 .reach {
-    margin-top: -15px;
     text-decoration: underline
 }
 
@@ -119,7 +126,7 @@ body {
 .start:hover {
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 }
 
 .first {
@@ -133,7 +140,7 @@ body {
 .second {
     margin-top: -15px;
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -145,4 +152,31 @@ body {
     display: flex;
     gap: 6px;
     align-items: center;   
+}
+
+@keyframes circle {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.6);
+    }
+  }
+
+.animate {
+    width: 16px;
+    height: 16px;
+    animation: circle 0.6s infinite;
+    animation-direction: alternate-reverse;
+}
+
+@media only screen and (max-width: 990px) {
+    .left,
+    .right {
+        display: none;
+    }
+    .header,
+    .footer {
+        padding: 150px;
+    }
 }

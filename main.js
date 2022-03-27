@@ -13,7 +13,7 @@ const bottomOfPage = () => {
         top: document.body.scrollHeight,
         behavior: 'smooth'
     });
-} 
+}
 
 const start = document.getElementsByClassName("start")
 const header = document.getElementsByClassName("header")

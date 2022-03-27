@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sahl Bakshi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="/images/ellipse.png" type="image/png">
+    <link rel="shortcut icon" href="/images/ellipse.png" type="image/png" style="width: 16px; height: 16px;">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -14,16 +15,16 @@
     </div>
     <div class="right">
         <div class="rotateRight">
-            <p class="upArrow" onclick=topOfPage()> <img src="images/left-arrow.png"></p>
+            <img class="upArrow" onclick=topOfPage() src="images/left-arrow.png" alt="go to top">
             <p>&nbsp &nbsp &nbsp &nbsp</p>
-            <p class="downArrow" onclick=bottomOfPage()> <img src="images/right-arrow.png"></p>
+            <img class="downArrow" onclick=bottomOfPage() src="images/right-arrow.png" alt="go to bottom">
         </div>
     </div>
 
     <div class="header">
         <p class="start" onclick=startPage()>START HERE ↓</p>
         <div class="second">
-            <img src="images/ellipse.png">
+            <img class="animate" src="images/green-circle.webp">
             <p class="start" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS</p>
         </div>
     </div>
@@ -34,11 +35,11 @@
         </div>
         <div class="info">
             <p>
-                Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="link" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solves a problem or just for fun.
+                Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="link" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solve problems or when coding for fun.
             </p>
             <p>
                 Got something you'd like to ask? An opportunity or project idea? Maybe want to say "Hi!"?<br>
-                <p class="start reach" onclick=bottomOfPage()>Reach out</p>
+                <a class="start reach" onclick=bottomOfPage()>Reach out</a>
             </p>
         </div>
     </div>
@@ -93,7 +94,6 @@
             <p>EXPERIENCE</p>
         </div>
         <div class="info">
-            <p>So far I've complete two interships and am searching for Fall '22 internhsips.</p>
             <p>
                 Project Team Member @ WE Accelerate<br>
                 <i>May 2021 - Aug 2021</i>
@@ -112,7 +112,7 @@
             <p>Here are some things I am learning / plan to learn.</p>
             <p>
                 Go and Golang<br>
-                Because I want to add it to my arsenal of skills.
+                Because I've heard good things about it.
             </p>
             <p>
                 Payment Methods API<br>
@@ -127,7 +127,7 @@
 
     <div class="footer">
         <div class="third">
-            <p>THANKS FOR STOPPING BY &nbsp</p> 
+            <p>THANKS FOR STOPPING BY &nbsp</p>
             <p class="size">👋</p>
         </div>
         <br>
