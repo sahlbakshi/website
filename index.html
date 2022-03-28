@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./images/dry-clean.png" type="image/png">
     <script src="main.js" defer></script>
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js" defer></script>
 </head>
 <body class="dark-body">
     <!-- 
@@ -25,7 +26,7 @@
         <div class="header">
             <div class="seek">
                 <img class="animate" src="images/green-circle.webp">
-                <a class="dark-in" href="#" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS </a>
+                <p class="dark-in" href="#" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS </p>
             </div>
             <button class="button" onclick="changeTheme()" data-theme="dark">
                 <img class="mode filter-white" src="./images/circle-half.svg">
@@ -40,10 +41,10 @@
                 <p>
                     Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="dark-ex" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solve problems or when coding for fun.
                 </p>
-                <p class="reach">
-                    Got something you'd like to ask? Wanna talk? &nbsp;
-                    <a class="dark-in" href="#" onclick=bottomOfPage()>Reach out </a>!
-                </p>
+                <div class="reach">
+                    <p>Got something you'd like to ask? Wanna talk? &nbsp;</p>
+                    <p class="dark-in" href="#" onclick=bottomOfPage()>Reach out </p><p>!</p>
+                </div>
             </div>
         </div>
         <div class="content">
