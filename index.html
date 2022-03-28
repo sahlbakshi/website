@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sahl Bakshi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="/images/ellipse.png" type="image/png" style="width: 16px; height: 16px;">
+    <link rel="shortcut icon" href="./images/dry-clean.png" type="image/png">
     <script src="main.js" defer></script>
 </head>
-<body>
+<body class="dark-body">
+    <!-- 
     <div class="left">
-        <p class="rotateLeft">
-        </p>
     </div>
     <div class="right">
         <div class="rotateRight">
@@ -20,123 +19,131 @@
             <img class="downArrow" onclick=bottomOfPage() src="images/right-arrow.png" alt="go to bottom">
         </div>
     </div>
+    -->
+    <div class="container">
 
-    <div class="header">
-        <p class="start" onclick=startPage()>START HERE ↓</p>
-        <div class="second">
-            <img class="animate" src="images/green-circle.webp">
-            <p class="start" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS</p>
+        <div class="header">
+            <div class="seek">
+                <img class="animate" src="images/green-circle.webp">
+                <a class="dark-in" href="#" onclick=bottomOfPage()> SEEKING FALL 2022 INTERNSHIPS </a>
+            </div>
+            <button class="button" onclick="changeTheme()" data-theme="dark">
+                <img class="mode filter-white" src="./images/circle-half.svg">
+            </button>
         </div>
-    </div>
-    
-    <div class="content first">
-        <div class="title">
-            <p>ABOUT</p>
-        </div>
-        <div class="info">
-            <p>
-                Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="link" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solve problems or when coding for fun.
-            </p>
-            <p>
-                Got something you'd like to ask? An opportunity or project idea? Maybe want to say "Hi!"?<br>
-                <a class="start reach" onclick=bottomOfPage()>Reach out</a>
-            </p>
-        </div>
-    </div>
-    <div class="content">
-        <div class="title">
-            <p>SKILLS</p>
-        </div>
-        <div class="info">
-            <p>I've picked up quite a few skills over the past few years. Here are some of them.</p>
-            <p>
-                Languages<br>
-                Python, C/C++, Javascript, HMTL, CSS/Sass <br>
-            </p>
-            <p>
-                FrameWorks & Databases <br>
-                React, Node, Express, MongoDB</p>
-            </p>
-            <p>
-                Services & Tools <br>
-                Bash, Git, Github, Slack, Postman, Chrome DevTools, EJS, Heroku, UML<br>
-            </p>
-        </div>
-    </div>
-    <div class="content">
-        <div class="title">
-            <p>PROJECTS</p>
-        </div>
-        <div class="info">
-            <p>
-                <a class="link" href="https://github.com/sahlbakshi/runtime">Runtime</a><br>
-                An application to search and find runtimes for movies and tv shows powered by the TMDB API.<br>
-                <i>Used React, API, SASS</i> 
-            </p>
-            <p>
-                <a class="link" href="https://github.com/sahlbakshi/straights">Straights</a><br>
-                The game of straights, live and in C++; did it for a course, got a near perfect mark.<br>
-                <i>Used C++, UML, Design Patterns</i>
-            </p>
-            <p>
-                <a class="link" href="https://github.com/sahlbakshi/website">Portfolio</a><br>
-                Personal website with emphasis on UX. Inspired from <a class="link" href="https://www.pronoy.ca">pronoy.ca</a> and <a class="link" href="http://dmcg.co">dmcg.co</a> and made by me.<br>
-                <i>Used HTML/CSS, GitHub pages, JS</i>
-            </p>
-            <p>
-                Backend Project<br>
-                Coming Soon
-            </p>
-        </div>
-    </div>
-    <div class="content">
-        <div class="title">
-            <p>EXPERIENCE</p>
-        </div>
-        <div class="info">
-            <p>
-                Project Team Member @ WE Accelerate<br>
-                <i>May 2021 - Aug 2021</i>
-            </p>
-            <p>
-                Software Engineer Intern @ UXBERT<br>
-                <i>January 2022 - April 2022</i>
-            </p>
-        </div>
-    </div>
-    <div class="content last">
-        <div class="title">
-            <p>LEARNING</p>
-        </div>
-        <div class="info">
-            <p>Here are some things I am learning / plan to learn.</p>
-            <p>
-                Go and Golang<br>
-                Because I've heard good things about it.
-            </p>
-            <p>
-                Payment Methods API<br>
-                Because I want to make applications that involve monetary payments.
-            </p>
-            <p>
-                Embedded Systems<br>
-                Beacuse I want to learn to write software for hardware too.
-            </p>
-        </div>
-    </div>
 
-    <div class="footer">
-        <div class="third">
+        <div class="content">
+            <div class="title">
+                <p>ABOUT ME</p>
+            </div>
+            <div class="info">
+                <p>
+                    Hi. I'm Sahl Bakshi and I bring ideas to life. I'm a second year computer science student at the <a class="dark-ex" href="https://uwaterloo.ca/news/waterloo-shines-new-global-subject-rankings">University of Waterloo</a>, learning how to build useful software. I love getting my hands dirty when implementing software that solve problems or when coding for fun.
+                </p>
+                <p class="reach">
+                    Got something you'd like to ask? Wanna talk? &nbsp;
+                    <a class="dark-in" href="#" onclick=bottomOfPage()>Reach out </a>!
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>SKILLS</p>
+            </div>
+            <div class="info">
+                <div class="skills">
+                    <p>
+                        Languages:<br>Python<br>C/C++<br>Javascript<br> HMTL<br> CSS/Sass <br>
+                    </p>
+                    <p>
+                        FrameWorks & DBs: <br>
+                        React<br> Node<br>Express<br> MongoDB<br>
+                    </p>
+                    <p>
+                        Services & Tools: <br>
+                        Bash<br> Git/Github<br>Postman<br>Chrome DevTools<br>EJS<br> Heroku<br>UML<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>PROJECTS</p>
+            </div>
+            <div class="info">
+                <p>
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/runtime">Runtime</a><br>
+                    An application to search and find runtimes for movies and tv shows powered by the TMDB API.<br>
+                    <i>Used React, API, SASS</i> 
+                </p>
+                <p>
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/straights">Straights</a><br>
+                    The game of straights, live and in C++; did it for a course, got a near perfect mark.<br>
+                    <i>Used C++, UML, Design Patterns</i>
+                </p>
+                <p>
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/website">Portfolio</a><br>
+                    Personal website with emphasis on the user experience.<br>
+                    <i>Used HTML/CSS, GitHub pages, JS</i>
+                </p>
+                <p>
+                    Backend Project<br>
+                    Coming Soon
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>EXPERIENCE</p>
+            </div>
+            <div class="info">
+                <p>
+                    Project Team Member @ WE Accelerate<br>
+                    <i>May 2021 - Aug 2021</i>
+                </p>
+                <p>
+                    Software Engineer Intern @ UXBERT<br>
+                    <i>January 2022 - April 2022</i>
+                </p>
+            </div>
+        </div>
+        <div class="content last">
+            <div class="title">
+                <p>LEARNING</p>
+            </div>
+            <div class="info">
+                <p>
+                    Go and Golang<br>
+                    Because I've heard good things about it.
+                </p>
+                <p>
+                    Payment Methods API<br>
+                    Because I want to make applications that involve monetary payments.
+                </p>
+                <p>
+                    Embedded Systems<br>
+                    Beacuse I want to learn to write software for hardware too.
+                </p>
+            </div>
+        </div>
+
+        <div class="message">
             <p>THANKS FOR STOPPING BY &nbsp</p>
             <p class="size">👋</p>
         </div>
         <br>
-        <div>
-            <p><a class="link" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
-            <p><a class="link" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
-            <p><a class="link" href="https://github.com/sahlbakshi">GitHub</a></p>
-            <p><a class="link" href="https://www.instagram.com/sahlbakshi/">Instagram</a></p>
-        </div>
+
+        <div class="footer">
+            <div class="contacts">
+                <p><a class="dark-ex" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
+                <p><a class="dark-ex" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
+                <p><a class="dark-ex" href="https://github.com/sahlbakshi">GitHub</a></p>
+                <p><a class="dark-ex" href="https://www.instagram.com/sahlbakshi/">Instagram</a></p>
+            </div>
+            <div class="year">
+                <p class="size"></p>
+                <p>*2022</p>
+        </div> 
     </div>
 </body>
 </html>
