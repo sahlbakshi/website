@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sahl's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/circle-fill.svg" type="image/svg">
+    <script src="main.js" defer></script>
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js" defer></script>
+</head>
+<body class="dark-body">
+    <!-- 
+    <div class="left">
+    </div>
+    <div class="right">
+        <div class="rotateRight">
+            <img class="upArrow" onclick=topOfPage() src="images/left-arrow.png" alt="go to top">
+            <p>&nbsp &nbsp &nbsp &nbsp</p>
+            <img class="downArrow" onclick=bottomOfPage() src="images/right-arrow.png" alt="go to bottom">
+        </div>
+    </div>
+    -->
+    <div class="container">
+
+        <div class="header">
+            <div class="seek">
+                <img class="animate" src="images/green-circle.webp">
+                <p class="dark-in" href="#" onclick=bottomOfPage()> SEEKING FALL 2023 CO-OPS AND INTERNSHIPS </p>
+            </div>
+            <button class="button" onclick="changeTheme()" data-theme="dark">
+                <img class="mode filter-white" src="./images/circle-half.svg">
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <p>ABOUT</p>
+            </div>
+            <div class="info">
+                <p>
+                    Hi! I'm Sahl Bakshi, a third year computer science student at the University of Waterloo, improving everyday and learning how to build useful software.
+                </p>
+                <p> Would you like to connect?
+                <span class="dark-in" href="#" onclick=bottomOfPage() style="text-decoration: underline;">Reach out!</span></p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="title">
+                <p>PROJECTS</p>
+            </div>
+            <div class="info">
+                <p>
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/portfolio">Portfolio</a><br>
+                    Made a personal portfolio website to host projects with a simple UX and toggle for dark/light mode.<br>
+                    <i>Used HTML/CSS and Vanilla JS</i>
+                </p>
+                
+                <p style="margin-bottom: 20px;">
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/blog">Full Stack Blog App</a><br>
+                    Implemented a full stack blog application with user authentication and more.<br>
+                    <i>Used the MERN stack</i>
+                </p>
+                <video controls autoplay src="./demos/demo-blog.mp4" width="800px"></video>
+
+                <p style="margin-bottom: 20px;">
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/straights">Straights Card Game</a><br>
+                    Implemented the card game of straights. Did it for a course, got a near perfect mark.<br>
+                    <i>Used UML, C++, OOP and Desing Patterns</i>
+                </p>
+                <iframe src="https://drive.google.com/file/d/1cy1aAqT5sT1VHmNcCUrmgMtOL1qOsPGT/preview" width="800" height="520" allow="autoplay"></iframe>
+
+                <p style="margin-bottom: 20px;">
+                    <a class="dark-ex" href="https://github.com/sahlbakshi/battleship">Battleship Game</a><br>
+                    Implemented the popular battleship game that is played with AI<br>
+                    <i>Used Kotlin and JavaFX</i>
+                </p>
+                <video controls autoplay src="./demos/demo-battleship.mp4" width="800px"></video>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <p>SKILLS</p>
+            </div>
+            <div class="info">
+                <div class="skills">
+                    <p>
+                        Languages:<br>
+                        Bash<br> Python<br>C/C++<br>Javascript<br> HMTL<br> CSS <br> Kotlin <br> 
+                    </p>
+                    <p>
+                        FrameWorks & DBs: <br>
+                        React<br> Node<br>Express<br> MongoDB<br> JavaFX<br>
+                    </p>
+                    <p>
+                        Services & Tools: <br>
+                        Git<br>GitHub<br>Postman<br>Chrome DevTools<br>GDB debugger<br>Gradle<br>NPM
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <p>EXPERIENCE</p>
+            </div>
+            <div class="info">
+                <div class="experience">
+                    <p>Ford Motor Company</p>
+                    <i>Sep 2022 - Dec 2022</i>
+                </div>
+                <p class="role">Software Development Intern</p>
+                <div class="experience">
+                    <p>UXBERT</p>
+                    <i>Jan 2022 - April 2022</i>
+                </div>
+                <p class="role">Software Engineer Intern</p>
+                <div class="experience">
+                    <p>WE Accelerate</p>
+                    <i>May 2021 - Aug 2021</i>
+                </div>
+                <p class="role">Project Team Member</p>
+            </div>
+        </div>
+
+        <div class="message">
+            <p>THANKS FOR STOPPING BY &nbsp</p>
+            <p class="size">👋</p>
+        </div>
+        <br>
+
+        <div class="footer">
+            <div class="contacts">
+                <p><a class="dark-ex" href="mailto:saa2baks@uwaterloo.ca">Email</a></p>
+                <p><a class="dark-ex" href="https://www.linkedin.com/in/sahl-bakshi-029957203/">LinkedIn</a></p>
+                <p><a class="dark-ex" href="https://github.com/sahlbakshi">GitHub</a></p>
+                <p><a class="dark-ex" href="https://www.instagram.com/sahlbakshi/">Instagram</a></p>
+            </div>
+            <p>Updated May 2023</p>
+        </div> 
+    </div>
+</body>
+</html>
